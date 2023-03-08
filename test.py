@@ -1,33 +1,30 @@
 import sys
-from collections import deque
+from collections import defaultdict
+sys.setrecursionlimit(int(1e6))
 input = sys.stdin.readline
 
 def init():
     N = int(input())
-    graph = [[0]*(N+1) for _ in range(N+1)]
+    graph = defaultdict(list)
 
     for _ in range(N-1):
         a,b = map(int,input().split())
-        graph[a][b] = graph[b][a] = 1
+        graph[a].append(b)
+        graph[b].append(a)
     return N,graph
 
-def bfs(graph,root):
-    q = deque([root])
-    visited = [False]*(N+1)
-    root_list = [0]*(N+1)
-
-    while q:
-        cur = q.popleft()
-        for i in range(1,N+1):
-            if graph[cur][i] and not visited[i]:
-                q.append(i)
-                visited[i] = True
-                root_list[i] = cur
-
-    return root_list
+def find_parent(graph,root):
+    cur = root
+    for next in graph[cur]:
+        if not parent_list[next]:
+            parent_list[next] = cur
+            find_parent(graph,next)
+    return
 
 if __name__ == '__main__':
     N, graph = init()
-    root_list = bfs(graph,1)
-    for x in root_list:
+    parent_list = [0]*(N+1)
+    parent_list[1] = 1
+    find_parent(graph,1)
+    for x in parent_list[2:]:
         print(x)
