@@ -18,3 +18,12 @@ def connection(host='127.0.0.1',
     
     return cur,con
 
+def foo():
+    print('함수를 호출했습니다.')
+
+if __name__ =='__main__':
+    print("위 함수가 잘 동작하는지 테스트 해보는 중입니다.")
+    foo()
+    print("잘 동작하네요!")
+
+
