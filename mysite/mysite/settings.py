@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,9 +80,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pybo',
         'USER' : 'root',
-        'PASSWORD' : '1234',
+        'PASSWORD' : 'password',
         'HOST' : '127.0.0.1',
-        'PORT' : '4000'
+        'PORT' : '4001'
     }
 }
 
