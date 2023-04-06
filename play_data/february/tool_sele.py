@@ -11,12 +11,13 @@ def chrome_init(url):
     driver.get(url)
     return driver
 
+
 # Click button on Chrome web page
-def click(driver,selector):
+def click(driver, selector):
     driver.find_element(By.CSS_SELECTOR, selector).click()
     return
 
+
 # Get current page HTML
 def get_html(driver):
-    return(BS(driver.page_source))
-
+    return BS(driver.page_source)
