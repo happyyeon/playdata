@@ -8,7 +8,7 @@ ALLOWED_HOSTS = ["*"]
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "prod_db",
+        "NAME": "pybo",
         "USER": "encore",
         "PASSWORD": "pass!@#",
         "HOST": "mysql",
