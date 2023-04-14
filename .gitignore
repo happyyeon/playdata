@@ -1,4 +1,8 @@
-.DS_Store
+# Ignore MAC Default file
+**/.DS_Store
+# Ignore all files named base.py in all directories
+**/base.py
+
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks
 
@@ -16,6 +20,8 @@ ipython_config.py
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
+
+
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks
 
