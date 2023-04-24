@@ -1,7 +1,6 @@
 # Ignore MAC Default file
 **/.DS_Store
 # Ignore all files named base.py in all directories
-**/base.py
 
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks
