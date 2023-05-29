@@ -19,3 +19,6 @@
     <textarea name="content" id="content" rows="15"></textarea>
     <input type="submit" value="답변등록">
 </form>
+
+<a href="{% url 'pybo:question_modify' question.id %}"
+                   class="btn btn-sm btn-outline-secondary">수정</a>
