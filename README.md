@@ -33,3 +33,16 @@
 - Django
     - 게시판 만들기
     - 동물 예측 모델 서비스
+ 
+ ### 5️⃣ 2023 May
+ 
+ - Unsupervised Learning
+ 
+ - RNN
+    -LSTM
+
+ - Airflow
+
+### 6️⃣ 2023 June
+
+- Recommend System
